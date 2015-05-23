@@ -1,0 +1,205 @@
+/**
+ * help classes and reset classes
+ * 易到用车
+ * www.yongche.com
+ */
+
+
+/*---------------------------------------------------------------------
+ *---------------------------------------------------------------------
+ * Reset Classes
+ *---------------------------------------------------------------------
+ *----------------------------------------------------------------------*/
+
+@charset "utf-8";
+/*
+    CSS Reset
+*/
+
+/*  清楚内外边距、边框、字体继承、外边框样式、垂直对齐方式  */
+html, body, div, span, applet, object, iframe, table, caption,
+tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* 重置焦点元素 */
+:focus {
+    outline: 0;
+}
+
+/* 重置列表元素 */
+ol, ul {
+    list-style: none;
+}
+
+/* 重置表格元素 */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* 重置表格字体 */
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+small { font-size: 80%; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+
+q:before, q:after { content: ''; }
+
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+
+/* 重置文本格式元素 */
+a { text-decoration: none; }
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { overflow-y: scroll; }
+/*---------------------------------------------------------------------
+ *---------------------------------------------------------------------
+ * Gerneral Classes
+ *---------------------------------------------------------------------
+ *----------------------------------------------------------------------*/
+
+/* About position */
+.root { position: relative; }
+.absolute { position: absolute; }
+
+/* About display */
+.show { display: block !important; }
+.hide { display: none !important; }
+.invisible { visibility: hidden; }
+.text-hidden { text-indent: -9999px; }
+
+/* About margin */
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About Typographic */
+.t-center { text-align: center; }
+.t-left { text-align: left; }
+.t-right { text-align: right; }
+
+.v-top { vertical-align: top; }
+.v-middle { vertical-align: middle; }
+.v-bottom { vertical-align: bottom; }
+
+.bold { font-weight: bold; }
+
+/* 不换行 */
+.nowrap { white-space: nowrap; }
+/* 自动换行 */
+.wrap-auto {
+    word-wrap: break-word;
+    word-break: normal;
+}
+/* 英文单词强制换行 */
+.wrap-force { word-break: break-all; }
+
+/* 超出部分省略号显示，但是需要把父容器设置宽度 */
+.text-ellipsis {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* About float */
+.pull-left { float: left !important; }
+.pull-right { float: right !important; }
+.clearfix { *zoom: 1; }
+.clearfix:after {
+    display: block;
+    height: 0;
+    content: ".";
+    visibility: hidden;
+    clear: both;
+}
+
+/* About pointer */
+.pointer { cursor: pointer; }
+
+/* About decoration */
+.underline { text-decoration: underline; }
+.underline-none { text-decoration: none; }
+
+/* About color */
+.white { color: #fff; }
+.red { color: #f27168; }
+.blue { color: #428bcd; }
+.black { color: #000000; }
+
+/* About box model */
+.no-resize { resize: none; }
+
+/* About display: box */
+.dis-box {
+    display: -webkit-box;
+    display: box;
+}
+.box-vertical {
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+}
+.flex {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+}
+
+.align-start {
+    -webkit-box-align: start;
+    box-align: start;
+}
+.align-center {
+    -webkit-box-align: center;
+    box-align: center;
+}
+.align-end {
+    -webkit-box-align: end;
+    box-align: end;
+}
+
+.pack-start {
+    -webkit-box-pack: start;
+    box-pack: start;
+}
+.pack-center {
+    -webkit-box-pack: center;
+    box-pack: center;
+}
+.pack-end {
+    -webkit-box-pack: end;
+    box-pack: end;
+}
+.pack-justify {
+    -webkit-box-pack: justify;
+    box-pack: justify;
+}
+
+/*About scale*/
+.scale-5 {
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}
