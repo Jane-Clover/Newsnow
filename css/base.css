@@ -15,7 +15,7 @@ html {
 
 body {
     height: 100%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     color: #999;
     background-color: #e6eef1;
@@ -27,6 +27,15 @@ img {
     width: auto;
 }
 
+h3 {
+    font-size: 1.6rem;
+    color: #666;
+}
+
+p {
+    font-size: 1.4rem;
+    color: #999;
+}
 /*---------------------------------------------------------------------
  *---------------------------------------------------------------------
  * Help Classes
@@ -45,7 +54,7 @@ img {
  *----------------------------------------------------------------------*/
 header {
     background-color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 .top-bar {
     height: 30px;
@@ -59,13 +68,13 @@ header {
 }
 
 .nav {
-    height: 45px;
-    line-height: 45px;
+    height: 40px;
+    line-height: 40px;
 }
 .nav-list { width: 100%; }
 .nav-list li {
-    height: 43px;
-    line-height: 43px;
+    height: 38px;
+    line-height: 38px;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     text-align: center;
@@ -79,18 +88,25 @@ header {
 }
 
 article {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     background-color: #e6eef1;
 }
 
-.banner {
-    height: 200px;
+.banner { height: 200px; }
+
+.sub-banner {
+    height: 120px;
+    background-size: 100% 100%;
 }
+
+.service-bg { background-image: url('../img/service.png'); }
+.case-bg { background-image: url('../img/case.png'); }
 
 footer {
     padding-top: 15px;
     padding-bottom: 20px;
     text-align: center;
+    font-size: 1.4rem;
     background-color: #fff;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
@@ -99,6 +115,7 @@ footer {
 .footer-info {
     width: 144px;
     margin: 0 auto;
+    margin-bottom: 6px;
 }
 .footer-info li {
     float: left;
@@ -117,7 +134,7 @@ footer {
  *---------------------------------------------------------------------
  *----------------------------------------------------------------------*/
 .func-list>li {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     background-color: #fff;
 }
 .func-list>li:last-child {
@@ -166,6 +183,8 @@ footer {
 .case-list .case-cover { height: 150px; }
 
 .case-list li h3 {
+    margin-top: 10px;
+
     color: #666;
     font-size: 1.5rem;
 }
@@ -184,10 +203,60 @@ footer {
     text-align: center;
     line-height: 40px;
     font-size: 1.4rem;
+}
+.dark-style {
     color: #999;
     background-color: #efefef;
 }
 
+.light-style {
+    color: #999;
+    background-color: transparent;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+
+    /*service*/
+.service-container {
+    padding: 0 10px;
+    background-color: #fff;
+}
+  
+.service-list>li {
+    padding: 40px 30px 30px 30px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.service-list>li:last-child {
+    border: none;
+
+}
+
+.service-list>li>a {
+    display: block;
+}
+
+.service-list > li .des-img {
+    height: 60px;
+}
+
+.service-list>li h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.service-list>li h3 p {
+   text-align: center;
+    color: #666;
+}
+
+.service-list>li p {
+    text-align: justify;
+    font-size: 1.4rem;
+    color: #999;
+}
 
     /*---------------------------------------------------------------------
      *---------------------------------------------------------------------
@@ -197,8 +266,8 @@ footer {
 .swiper-container { height: 200px; }
 .swiper-pagination { text-align: right; }
 .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     opacity: 1;
     background: #fff;
 }
