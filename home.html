@@ -2,9 +2,155 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!--全屏-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> <!--改变状态栏-->
+    <meta name="format-detection" content="telephone=no">  <!--自动检测在网页中可能出现的电话号码-->
+    <title>纽斯洛</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/swiper3.07.min.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
 </head>
 <body>
+<header>
+    <div class="top-bar gray-border">
+        <div class="pull-left logo"><img src="img/logo.png" alt="北京纽斯洛"/></div>
+        <div class="pull-right mail"><img src="img/mail.png" alt="邮箱"/></div>
+    </div>
+    <div class="nav gray-border">
+        <ul class="nav-list dis-box box-horizontal">
+            <li class="active"><a href="">首页</a></li>
+            <li><a href="">服务</a></li>
+            <li><a href="">案例</a></li>
+            <li><a href="">客户评价</a></li>
+            <li><a href="">关于</a></li>
+        </ul>
+    </div>
+</header>
+<article>
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/swiper_01.png" alt="蓝标供销社APP"/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/message.png" alt="客户评价"/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/swiper_01.png" alt="蓝标供销社APP"/>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <ul class="func-list">
+        <li class="gray-border">
+            <div class="title gray-border">
+                <h2>我们的服务</h2>
+            </div>
+            <div class="content dis-box box-horizontal">
+                <div class="content-icon">
+                    <img src="img/phone.png" alt="手机APP开发"/>
+                </div>
+                <div class="content-description flex gray-border">
+                    <h3>手机APP开发</h3>
+                    <h3>App Development</h3>
+                    <a href="">企业开发手机app并不难，难的是不知道什么样的app才能为企业带来价值。纽斯洛提供专业...</a>
+                </div>
+            </div>
 
+            <div class="content dis-box box-horizontal">
+                <div class="content-icon">
+                    <img src="img/internet.png" alt="电子商务技术"/>
+                </div>
+                <div class="content-description flex gray-border">
+                    <h3>电子商务技术</h3>
+                    <h3>E-Business Technology</h3>
+                    <a href="">我们对电子商务产品有自己的一套解决方案,B2B,B2C,B2B2C,C2C,B2H等，专注于高端...</a>
+                </div>
+            </div>
+
+            <div class="content dis-box box-horizontal">
+                <div class="content-icon">
+                    <img src="img/mac.png" alt="电子商务技术"/>
+                </div>
+                <div class="content-description flex ">
+                    <h3>大型门户网站建设</h3>
+                    <h3>Construction of Web portal</h3>
+                    <a href="">我们有十年大型门户网站建设经验，对行业门户有独到的产品解读和规划能力，对技术开发方...</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="gray-border">
+            <div class="title gray-border">
+                <h2>成功的案例</h2>
+            </div>
+
+            <ul class="case-list clearfix">
+                <li><a href="">
+                    <div class="case-cover">
+                        <img src="img/case_01.png" alt="蓝标APP"/>
+                    </div>
+                    <h3>蓝标APP-ios版</h3>
+                    <p>全新社交电商平台</p>
+                </a></li>
+
+                <li><a href="">
+                    <div class="case-cover">
+                        <img src="img/case_02.png" alt="蓝标APP"/>
+                    </div>
+                    <h3>蓝标APP-ios版</h3>
+                    <p>全新社交电商平台</p>
+                </a></li>
+
+                <li><a href="">
+                    <div class="case-cover">
+                        <img src="img/case_03.png" alt="蓝标APP"/>
+                    </div>
+                    <h3>蓝标APP-ios版</h3>
+                    <p>全新社交电商平台</p>
+                </a></li>
+
+                <li><a href="">
+                    <div class="case-cover">
+                        <img src="img/case_04.png" alt="蓝标APP"/>
+                    </div>
+                    <h3>蓝标APP-ios版</h3>
+                    <p>全新社交电商平台</p>
+                </a></li>
+            </ul>
+        </li>
+
+
+    </ul>
+
+    <div class="more-container"><a class="load-more" href="">更多...</a></div>
+</article>
+
+<footer>
+    <ul class="clearfix footer-info">
+        <li><a href="">联系我们</a></li>
+        <li><a href="">加入我们</a></li>
+    </ul>
+    <p>Copyright&copy2004-2015 www.newsnow.com.cn,lnc.</p>
+    <p>All Rights Reserved</p>
+</footer>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/swiper3.07.min.js"></script>
+<script>
+   //插件选项可配置，具体参考其API http://www.swiper.com.cn/api/basic/2014/1213/16.html
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay : 4000,
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+
+    })
+</script>
 </body>
 </html>

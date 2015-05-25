@@ -1,7 +1,6 @@
 /**
  * help classes and reset classes
- * 易到用车
- * www.yongche.com
+ * 杜静杰
  */
 
 
@@ -13,6 +12,7 @@
 
 @charset "utf-8";
 /*
+
     CSS Reset
 */
 
@@ -44,11 +44,11 @@ ol, ul {
     list-style: none;
 }
 
-/* 重置表格元素 */
-table {
-    border-collapse: separate;
+table { /* 删除表格单元格之间的间距。 */
+    border-collapse: collapse;
     border-spacing: 0;
 }
+
 
 /* 重置表格字体 */
 caption, th, td {
@@ -72,8 +72,25 @@ hr {
 /* 重置文本格式元素 */
 a { text-decoration: none; }
 
-/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
-html { overflow-y: scroll; }
+button,
+html input[type="button"], /* 避免webKit bug发生在Android 4.0.* 设备上，破坏原生“audio”和“video”控制组件 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 改正iOS设备中“input”类型表单样式不可用的问题 */
+    cursor: pointer; /* 增强光标样式在input表单和其他表单的可用性和一致性 */
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 兼容Safari 5 and Chrome上 “searchfield” 上设置 “appearance”属性 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 兼容Safari 5 and Chrome上 “border-box” 上设置 “box-sizing”属性 */
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;    /* 去除OS X系统上Safari 5和Chrome中容器内边距和搜索取消按钮属性 */
+}
 /*---------------------------------------------------------------------
  *---------------------------------------------------------------------
  * Gerneral Classes
@@ -162,6 +179,10 @@ html { overflow-y: scroll; }
 .box-vertical {
     -webkit-box-orient: vertical;
     box-orient: vertical;
+}
+.box-horizontal {
+    -webkit-box-orient: horizontal;
+    box-orient: horizontal;
 }
 .flex {
     -webkit-box-flex: 1;

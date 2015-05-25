@@ -1,0 +1,205 @@
+/**
+*2015/05/24
+*NewSnow
+**/
+
+
+/*---------------------------------------------------------------------
+ *---------------------------------------------------------------------
+ * Gerneral Classes
+ *---------------------------------------------------------------------
+ *----------------------------------------------------------------------*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    font-size: 1.2rem;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    color: #999;
+    background-color: #e6eef1;
+}
+
+
+img {
+    height: 100%;
+    width: auto;
+}
+
+/*---------------------------------------------------------------------
+ *---------------------------------------------------------------------
+ * Help Classes
+ *---------------------------------------------------------------------
+ *----------------------------------------------------------------------*/
+.gray-border { border-bottom: 1px solid #e5e5e5; }
+
+.mr10 { margin-right: 10px; }
+.ml10 { margin-left: 10px; }
+
+.bg-white { background-color: #fff;}
+/*---------------------------------------------------------------------
+ *---------------------------------------------------------------------
+ * Components Classes
+ *---------------------------------------------------------------------
+ *----------------------------------------------------------------------*/
+header {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.top-bar {
+    height: 30px;
+    padding: 8px 10px;
+    line-height: 30px;
+}
+.logo { height: 30px; }
+.mail {
+    height: 20px;
+    margin-top: 5px;
+}
+
+.nav {
+    height: 45px;
+    line-height: 45px;
+}
+.nav-list { width: 100%; }
+.nav-list li {
+    height: 43px;
+    line-height: 43px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    text-align: center;
+}
+.nav-list li.active {
+    border-bottom: 2px solid #23a285;
+}
+.nav-list a {
+    font-size: 1.6rem;
+    color: #666;
+}
+
+article {
+    margin-bottom: 10px;
+    background-color: #e6eef1;
+}
+
+.banner {
+    height: 200px;
+}
+
+footer {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.footer-info {
+    width: 144px;
+    margin: 0 auto;
+}
+.footer-info li {
+    float: left;
+}
+
+.footer-info li a {
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 8px;
+    font-size: 1.4rem;
+    color: #666;
+}
+/*---------------------------------------------------------------------
+ *---------------------------------------------------------------------
+ * Page Classes
+ *---------------------------------------------------------------------
+ *----------------------------------------------------------------------*/
+.func-list>li {
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.func-list>li:last-child {
+    margin-bottom: 0;
+}
+.func-list .title{
+    height: 35px;
+    padding-left: 10px;
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 35px;
+    border-left: 4px solid #21a082;
+}
+
+.content-icon {
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.content-description { padding: 30px 20px 20px 0; }
+
+.content-description h3 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.content-description a {
+    display: block;
+    color: inherit;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.case-list { padding: 10px 0px; }
+
+.case-list li {
+    float: left;
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.case-list .case-cover { height: 150px; }
+
+.case-list li h3 {
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.case-list li p { color: #999; }
+
+.more-container {
+    background-color: #fff;
+    padding: 0 10px 15px;
+}
+
+.load-more {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.4rem;
+    color: #999;
+    background-color: #efefef;
+}
+
+
+    /*---------------------------------------------------------------------
+     *---------------------------------------------------------------------
+     * Plugin Classes OverWrite
+     *---------------------------------------------------------------------
+     *----------------------------------------------------------------------*/
+.swiper-container { height: 200px; }
+.swiper-pagination { text-align: right; }
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    background: #fff;
+}
+.swiper-pagination-bullet-active { background: #16ac55; }
