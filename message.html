@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!--全屏-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> <!--改变状态栏-->
+    <meta name="format-detection" content="telephone=no">  <!--自动检测在网页中可能出现的电话号码-->
+    <title>纽斯洛客户评价</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body>
+<header>
+    <div class="top-bar gray-border">
+        <div class="pull-left logo"><img src="img/logo.png" alt="北京纽斯洛"/></div>
+        <div class="pull-right mail"><img class="scale-7" src="img/mail.png" alt="邮箱"/></div>
+    </div>
+    <div class="nav gray-border">
+        <ul class="nav-list dis-box box-horizontal">
+            <li><a href="">首页</a></li>
+            <li><a href="">服务</a></li>
+            <li><a href="">案例</a></li>
+            <li class="active"><a href="">客户评价</a></li>
+            <li><a href="">关于</a></li>
+        </ul>
+    </div>
+</header>
+<article>
+    <div class="sub-banner message-bg"></div>
+    <div class="message-swiper">
+            <!--tag标题-->
+        <ul id="nav">
+            <li><a href="#" class="selected">客户评价<i class="arrow"></i></a></li>
+            <li><a href="#" class="">行业寄语<i class="arrow"></i></a></li>
+        </ul>
+        <!--二级菜单-->
+        <div id="menu_con">
+            <div class="tag" style="display:block">
+                <ul class="message-list">
+                    <li>
+
+                        <img class="avatar" src="img/avatar.jpg" alt="用户头像"/>
+
+                        <h3 class="user-info">
+                            张伟
+                            <small>中国论文资源库CFO</small>
+                        </h3>
+                        <p>
+                            纽斯洛，一个智慧与创新的优秀团队，一个与时俱进的高大上公司。开发前，通过大量的认真调研，以客户角度整理思路；
+                            开发中，以时尚流行的前沿技术与产品完美交融；开发后，以娴熟专业的技术为客户借出去后顾之忧。祝愿纽斯洛，在未来IT的新时代海洋中，
+                            乘风破浪，畅行无阻。
+                        </p>
+                    </li>
+
+                    <li>
+
+                        <img class="avatar" src="img/avatar.jpg" alt="用户头像"/>
+                        <h3 class="user-info">
+                            徐锋
+                            <small>汽车宝贝CEO</small>
+                        </h3>
+                        <p>
+                            汽车生产厂商和经销商都非常希望建立与客户之间的信息沟通平台，汽车垂直网站可集中用户的各种反馈
+                            和信息，满足这一需求。未来，随着汽车普及率达到一定程度，相应的汽车生活方式也会逐渐普及，汽车贷款
+                            和保险、汽车改装、养车修车、汽车用品等服务会越来越丰富。这时消费者将不仅仅满足于4S店的统一服务。
+                            如果能够将相关的信息整合到一起，为用户提供方便而且全面的信息比较平台，甚至交易平台，汽车垂直网站
+                            将可以在此基础上发展出各种各样的具体方式。纽斯洛将这一切整合到一起使网站焕发生机，IT行业的最新
+                            技术体系用于服务行业成就了纽斯洛也成就了我们。
+                        </p>
+                    </li>
+
+                    <li>
+
+                        <img class="avatar" src="img/avatar.jpg" alt="用户头像"/>
+
+                        <h3 class="user-info">
+                            张耿瑞
+                            <small>中国发展简报运营主任</small>
+                        </h3>
+                        <p>
+                            点赞！感谢纽斯洛团队的大力支持，没有你们的付出和专业意见我们网站的升级效果不会这么理想。
+                            希望您们再接再厉，争取以后有机会继续合作。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="tag" style="display:none">
+                这里是tab切换效果
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+ </article>
+
+<footer>
+    <ul class="clearfix footer-info">
+        <li><a href="">联系我们</a></li>
+        <li><a href="">加入我们</a></li>
+    </ul>
+    <p>Copyright&copy2004-2015 www.newsnow.com.cn,lnc.</p>
+    <p>All Rights Reserved</p>
+</footer>
+
+<script>
+    var tabs=function(){
+        function tag(name,elem){
+            return (elem||document).getElementsByTagName(name);
+        }
+        //获得相应ID的元素
+        function id(name){
+            return document.getElementById(name);
+        }
+        function first(elem){
+            elem=elem.firstChild;
+            return elem&&elem.nodeType==1? elem:next(elem);
+        }
+        function next(elem){
+            do{
+                elem=elem.nextSibling;
+            }while(
+            elem&&elem.nodeType!=1
+                    )
+            return elem;
+        }
+        return {
+            set:function(elemId,tabId){
+                var elem=tag("li",id(elemId));
+                var tabs=tag("div",id(tabId));
+                var listNum=elem.length;
+                var tabNum=tabs.length;
+                for(var i=0;i<listNum;i++){
+                    elem[i].onclick=(function(i){
+                        return function(){
+                            for(var j=0;j<tabNum;j++){
+                                if(i==j){
+                                    tabs[j].style.display="block";
+                                    //alert(elem[j].firstChild);
+                                    elem[j].firstChild.className="selected";
+                                }
+                                else{
+                                    tabs[j].style.display="none";
+                                    elem[j].firstChild.className="";
+                                }
+                            }
+                        }
+                    })(i)
+                }
+            }
+        }
+    }();
+    tabs.set("nav","menu_con");//执行
+
+</script>
+</body>
+</html>

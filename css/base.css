@@ -43,8 +43,11 @@ p {
  *----------------------------------------------------------------------*/
 .gray-border { border-bottom: 1px solid #e5e5e5; }
 
+.mt22 { margin-top: 22px; }
 .mr10 { margin-right: 10px; }
 .ml10 { margin-left: 10px; }
+.mb13 { margin-bottom: 13px;}
+.pb15 { padding-bottom: 15px;}
 
 .bg-white { background-color: #fff;}
 /*---------------------------------------------------------------------
@@ -101,6 +104,9 @@ article {
 
 .service-bg { background-image: url('../img/service.png'); }
 .case-bg { background-image: url('../img/case.png'); }
+.message-bg { background-image: url('../img/message.png'); }
+.about-bg { background-image: url('../img/about.png'); }
+.contact-bg { background-image: url("../img/contact.png");}
 
 footer {
     padding-top: 15px;
@@ -258,11 +264,102 @@ footer {
     color: #999;
 }
 
-    /*---------------------------------------------------------------------
-     *---------------------------------------------------------------------
-     * Plugin Classes OverWrite
-     *---------------------------------------------------------------------
-     *----------------------------------------------------------------------*/
+    /*message*/
+.message-swiper {
+    position: relative;
+    padding: 70px 20px 0 40px;
+    background-color: #fff;
+}
+
+.message-list>li {
+    position: relative;
+    padding: 12px 0 20px 40px;
+    border-left: 2px solid #e5e5e5;
+}
+
+.message-list>li p {
+    color: #777;
+}
+
+.message-list .avatar {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.user-info {
+    margin-bottom: 15px;
+}
+
+.user-info small { color: #999; }
+
+/*about*/
+.about-list li {
+   padding-top: 22px;
+   padding-right: 12px;
+}
+
+.des-container {
+    padding: 15px 10px 0;
+}
+
+.des-container p {
+    font-size: 1.4rem;
+}
+.about-list>li>h3 {
+    position: relative;
+    width: 90px;
+    height: 24px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 24px;
+    background-color: #90d0c1;
+}
+
+.triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+    border-width: 12px;
+}
+
+.img-container { height: 70px; }
+
+.list-container {
+    height: 40px;
+    margin-right: 12px;
+    margin-bottom: 15px;
+}
+/*contact*/
+.contact-container {
+    padding: 40px 10px 25px;
+}
+
+.contact-img {
+    height: 55px;
+    margin-right: 16px;
+}
+
+.map {
+    width: 100%;
+    height: 180px;
+    margin-top: 23px;
+    background-image: url('../img/map.png');
+    background-size: 100% 100%;
+}
+
+/*---------------------------------------------------------------------
+ *---------------------------------------------------------------------
+ * Plugin Classes OverWrite
+ *---------------------------------------------------------------------
+ *----------------------------------------------------------------------*/
 .swiper-container { height: 200px; }
 .swiper-pagination { text-align: right; }
 .swiper-pagination-bullet {
@@ -272,3 +369,53 @@ footer {
     background: #fff;
 }
 .swiper-pagination-bullet-active { background: #16ac55; }
+
+
+/*tab*/
+#nav {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    display:block;
+    width: 250px;
+    height: 40px;
+    padding: 0 20px;
+    margin: 0 auto;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+
+}
+#nav li {
+    float:left;
+    width:120px;
+}
+#nav li a {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    text-align:center;
+    font-size: 1.6rem;
+    color:#999;
+}
+
+#nav li a.selected{
+    position: relative;
+    padding: 0 12px;
+    color: #22a183;
+    border-bottom: 2px solid #22a183;
+}
+
+#nav li a.selected .arrow {
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+    right: 0;
+    display: inline-block;
+    width: 0;
+    margin: 0 auto;
+    border-color: #22a183 transparent transparent transparent;
+    border-style: solid;
+    border-width: 6px;
+}
