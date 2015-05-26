@@ -95,7 +95,7 @@ article {
     background-color: #e6eef1;
 }
 
-.banner { height: 200px; }
+.banner { height: 150px; }
 
 .sub-banner {
     height: 120px;
@@ -392,7 +392,7 @@ footer {
 .swiper-pagination-bullet-active { background: #16ac55; }
 
 .slide-img {
-    height: 200px;
+    height: 150px;
     width: 100%;
     background-size: 100% 100%;
 }
