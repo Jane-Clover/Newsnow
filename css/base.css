@@ -381,7 +381,7 @@ footer {
  * Plugin Classes OverWrite
  *---------------------------------------------------------------------
  *----------------------------------------------------------------------*/
-.swiper-container { height: 200px; }
+.swiper-container { height: 150px; }
 .swiper-pagination { text-align: right; }
 .swiper-pagination-bullet {
     width: 8px;
@@ -439,7 +439,7 @@ footer {
 
 #nav li a.selected{
     position: relative;
-    padding: 0 12px;
+    /*padding: 0 12px;*/
     color: #22a183;
     border-bottom: 2px solid #22a183;
 }
