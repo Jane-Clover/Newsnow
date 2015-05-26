@@ -172,6 +172,7 @@ footer {
 
 .content-description a {
     display: block;
+    margin-top: 5px;
     color: inherit;
     word-wrap: break-word;
     word-break: break-all;
@@ -186,7 +187,11 @@ footer {
     text-align: center;
 }
 
-.case-list .case-cover { height: 150px; }
+.case-list .case-cover {
+    height: 150px;
+    margin: 0 10px;
+    background-size: 100% 100%;
+}
 
 .case-list li h3 {
     margin-top: 10px;
@@ -210,6 +215,11 @@ footer {
     line-height: 40px;
     font-size: 1.4rem;
 }
+.more-container .load-more:active {
+    color: #fff;
+    background-color: #999;
+}
+
 .dark-style {
     color: #999;
     background-color: #efefef;
@@ -219,13 +229,13 @@ footer {
     color: #999;
     background-color: transparent;
     border-top: 1px solid #e5e5e5;
-    border-bottom: 2px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 
     /*service*/
 .service-container {
-    padding: 0 10px;
+    /*padding: 0 10px;*/
     background-color: #fff;
 }
   
@@ -261,6 +271,7 @@ footer {
 .service-list>li p {
     text-align: justify;
     font-size: 1.4rem;
+    line-height: 1.7rem;
     color: #999;
 }
 
@@ -330,12 +341,12 @@ footer {
     border-width: 12px;
 }
 
-.img-container { height: 70px; }
+.img-container { height: 100px; }
 
 .list-container {
     height: 40px;
     margin-right: 12px;
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
 }
 /*contact*/
 .contact-container {
@@ -355,6 +366,16 @@ footer {
     background-size: 100% 100%;
 }
 
+/*join*/
+.join {
+    padding: 50px 10px 25px 10px;
+}
+
+.join-list h3 {
+    margin-top: 30px;
+    margin-bottom: 17px;
+}
+
 /*---------------------------------------------------------------------
  *---------------------------------------------------------------------
  * Plugin Classes OverWrite
@@ -370,7 +391,11 @@ footer {
 }
 .swiper-pagination-bullet-active { background: #16ac55; }
 
-
+.slide-img {
+    height: 200px;
+    width: 100%;
+    background-size: 100% 100%;
+}
 /*tab*/
 #nav {
     position: absolute;
@@ -385,11 +410,21 @@ footer {
     line-height: 40px;
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
-
 }
+
+.join #nav {
+    width: 100%;
+    padding: 0;
+}
+
 #nav li {
     float:left;
     width:120px;
+}
+
+.join #nav li {
+    width: 33%;
+
 }
 #nav li a {
     display: inline-block;
@@ -399,6 +434,8 @@ footer {
     font-size: 1.6rem;
     color:#999;
 }
+
+.join #nav li a { font-size: 1.3rem; }
 
 #nav li a.selected{
     position: relative;
