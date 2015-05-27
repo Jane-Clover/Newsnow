@@ -145,6 +145,11 @@
     document.body.addEventListener('touchstart', function () { });
 </script>
 <script>
+    var $width = $(".case-cover").width();
+    var $height = $width * 0.83;
+    $(".case-cover").height($height);
+</script>
+<script>
    //插件选项可配置，具体参考其API http://www.swiper.com.cn/api/basic/2014/1213/16.html
     var mySwiper = new Swiper ('.swiper-container', {
         direction: 'horizontal',
